@@ -25,15 +25,15 @@
                 motion:motionTarget="@+id/button"/>
             <KeyPosition
                 motion:keyPositionType="parentRelative"
-                motion:percentY="0.27"
-                motion:percentX="0.5"
+                motion:percentY="0.26"
+                motion:percentX="0.40"
                 motion:framePosition="27"
                 motion:pathMotionArc="startHorizontal"
                 motion:motionTarget="@+id/button"/>
             <KeyPosition
                 motion:keyPositionType="parentRelative"
-                motion:percentX="0.83"
-                motion:percentY="0.5"
+                motion:percentX="0.80"
+                motion:percentY="0.45"
                 motion:framePosition="36"
                 motion:pathMotionArc="startVertical"
                 motion:motionTarget="@+id/button"
@@ -41,55 +41,68 @@
             <KeyPosition
                 motion:keyPositionType="parentRelative"
                 motion:pathMotionArc="startHorizontal"
-                motion:percentY="0.65"
-                motion:percentX="0.5"
+                motion:percentY="0.64"
+                motion:percentX="0.50"
                 motion:framePosition="45"
                 motion:motionTarget="@+id/button"/>
             <KeyPosition
                 motion:keyPositionType="parentRelative"
                 motion:percentY="0.5"
-                motion:percentX="0.25"
+                motion:percentX="0.23"
                 motion:framePosition="54"
                 motion:pathMotionArc="startVertical"
                 motion:motionTarget="@+id/button"/>
             <KeyPosition
                 motion:keyPositionType="parentRelative"
-                motion:percentY="0.40"
-                motion:percentX="0.5"
+                motion:percentY="0.37"
+                motion:percentX="0.45"
                 motion:framePosition="63"
                 motion:pathMotionArc="startHorizontal"
                 motion:motionTarget="@+id/button"/>
             <KeyPosition
                 motion:keyPositionType="parentRelative"
-                motion:percentX="0.65"
-                motion:percentY="0.5"
+                motion:percentY="0.47"
+                motion:percentX="0.62"
                 motion:framePosition="72"
                 motion:pathMotionArc="startVertical"
                 motion:motionTarget="@+id/button"
                 />
             <KeyPosition
                 motion:keyPositionType="parentRelative"
-                motion:percentY="0.58"
-                motion:percentX="0.5"
+                motion:percentY="0.55"
+                motion:percentX="0.47"
                 motion:framePosition="81"
                 motion:pathMotionArc="startHorizontal"
                 motion:motionTarget="@+id/button"/>
             <KeyPosition
                 motion:keyPositionType="parentRelative"
-                motion:percentX="0.40"
                 motion:percentY="0.5"
-                motion:framePosition="90"
+                motion:percentX="0.39"
+                motion:framePosition="85"
                 motion:pathMotionArc="startVertical"
                 motion:motionTarget="@+id/button"
                 />
             <KeyPosition
                 motion:keyPositionType="parentRelative"
-                motion:percentX="0.5"
                 motion:percentY="0.45"
-                motion:framePosition="97"
+                motion:percentX="0.46"
+                motion:framePosition="90"
                 motion:motionTarget="@+id/button"
+                motion:pathMotionArc="startHorizontal"
+                />
+            <KeyPosition
+                motion:keyPositionType="parentRelative"
+                motion:percentX="0.51"
+                motion:percentY="0.48"
+                motion:framePosition="95"
+                motion:motionTarget="@+id/button"
+                motion:pathMotionArc="startVertical"
                 />
         </KeyFrameSet>
+        <OnClick
+            motion:clickAction="toggle"
+            motion:targetId="@+id/button"
+            />
     </Transition>
     <ConstraintSet android:id="@+id/start">
         <Constraint
@@ -106,14 +119,15 @@
     <ConstraintSet android:id="@+id/end">
         <Constraint
             android:id="@+id/button"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintTop_toTopOf="parent"
-            motion:layout_constraintStart_toStartOf="parent"
             motion:layout_constraintEnd_toEndOf="parent"
+            motion:keyPositionType="parentRelative"
             motion:pathMotionArc="startHorizontal"
-            />
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginEnd="20dp" />
 
     </ConstraintSet>
 
