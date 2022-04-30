@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.idnp.danp_lab01_animacinconmotionlayout.fragments.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_fragmentActividad01"
+            app:destination="@id/fragmentActividad01" />
+        <action
+            android:id="@+id/action_mainFragment_to_fragmentActividad02"
+            app:destination="@id/fragmentActividad02" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentActividad01"
+        android:name="com.idnp.danp_lab01_animacinconmotionlayout.fragments.FragmentActividad01"
+        android:label="fragment_actividad01"
+        tools:layout="@layout/fragment_actividad01" >
+        <action
+            android:id="@+id/action_fragmentActividad01_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentActividad02"
+        android:name="com.idnp.danp_lab01_animacinconmotionlayout.fragments.FragmentActividad02"
+        android:label="fragment_actividad02"
+        tools:layout="@layout/fragment_actividad02" >
+        <action
+            android:id="@+id/action_fragmentActividad02_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+</navigation>

@@ -3,7 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/ING. SISTEMAS/2022-A/Labs/Lab01/app/src/main/res/layout/actividad1_01.xml" value="0.33" />
+        <entry key="..\:/ING. SISTEMAS/2022-A/Labs/Lab01/app/src/main/res/layout/Main_Activity.xml" value="0.15027322404371585" />
+        <entry key="..\:/ING. SISTEMAS/2022-A/Labs/Lab01/app/src/main/res/layout/actividad1_01.xml" value="0.1" />
+        <entry key="..\:/ING. SISTEMAS/2022-A/Labs/Lab01/app/src/main/res/layout/actividad1_02.xml" value="0.1" />
+        <entry key="..\:/ING. SISTEMAS/2022-A/Labs/Lab01/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/ING. SISTEMAS/2022-A/Labs/Lab01/app/src/main/res/layout/fragment_act01.xml" value="0.1" />
+        <entry key="..\:/ING. SISTEMAS/2022-A/Labs/Lab01/app/src/main/res/layout/fragment_acti02.xml" value="0.1" />
+        <entry key="..\:/ING. SISTEMAS/2022-A/Labs/Lab01/app/src/main/res/layout/fragment_actividad01.xml" value="0.14765625" />
+        <entry key="..\:/ING. SISTEMAS/2022-A/Labs/Lab01/app/src/main/res/layout/fragment_actividad02.xml" value="0.67" />
+        <entry key="..\:/ING. SISTEMAS/2022-A/Labs/Lab01/app/src/main/res/layout/fragment_main.xml" value="0.25" />
         <entry key="..\:/ING. SISTEMAS/2022-A/Labs/app/src/main/res/layout/actividad1_02.xml" value="0.21041666666666667" />
         <entry key="..\:/ING. SISTEMAS/2022-A/Labs/app/src/main/res/layout/activity_main.xml" value="0.25" />
       </map>
