@@ -4,43 +4,76 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.FragmentActividad02"
+    android:visibility="visible"
+    app:layoutDescription="@xml/actividad1_02_scene"
     app:showPaths="true"
-    app:layoutDescription="@xml/actividad1_02_scene">
+    tools:context=".fragments.FragmentActividad01">
 
     <Button
         android:id="@+id/button_a1"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@color/purple_700"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="-200dp"
         android:text="A1"
-        tools:layout_editor_absoluteX="2dp"
-        tools:layout_editor_absoluteY="195dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button_a2"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@color/purple_700"
+        android:layout_marginEnd="20dp"
         android:text="A2"
-        tools:layout_editor_absoluteX="2dp"
-        tools:layout_editor_absoluteY="195dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button_a3"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@color/purple_700"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="200dp"
         android:text="A3"
-        tools:layout_editor_absoluteX="2dp"
-        tools:layout_editor_absoluteY="195dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button_a4"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@color/purple_700"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="400dp"
         android:text="A4"
-        tools:layout_editor_absoluteX="2dp"
-        tools:layout_editor_absoluteY="195dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="414dp"
+        android:layout_height="731dp"
+        android:foregroundGravity="top"
+        android:rotation="0"
+        android:src="@mipmap/background"
+        android:translationZ="2dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/cerrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cerrar"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
 </androidx.constraintlayout.motion.widget.MotionLayout>

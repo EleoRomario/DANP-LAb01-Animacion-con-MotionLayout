@@ -1,38 +1,174 @@
 <?xml version="1.0" encoding="utf-8"?>
 <MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
 
-    <ConstraintSet android:id="@+id/start">
-        <Constraint android:id="@+id/button"
-            app:layout_editor_absoluteY="195dp"
+
+    <ConstraintSet android:id="@+id/start_a3">
+        <Constraint android:id="@+id/button_a3"
             android:layout_height="64dp"
-            app:layout_editor_absoluteX="2dp"
-            android:layout_width="64dp" />
-        <Constraint
-            app:layout_editor_absoluteY="294dp"
-            android:layout_height="64dp"
-            app:layout_editor_absoluteX="317dp"
             android:layout_width="64dp"
-            android:id="@+id/button_a2" />
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="200dp">
+            <CustomAttribute
+                motion:attributeName="backgroundColor"
+                motion:customColorValue="#2ecc71"/>
+            <CustomAttribute
+                motion:attributeName="Text"
+                motion:customStringValue="A3"/>
+        </Constraint>
         <Constraint
-            app:layout_editor_absoluteY="375dp"
-            android:layout_height="64dp"
-            app:layout_editor_absoluteX="2dp"
+            android:id="@+id/button_a1"
             android:layout_width="64dp"
-            android:id="@+id/button_a3" />
+            android:layout_height="64dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="-200dp"
+            android:text="A1"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+
         <Constraint
-            app:layout_editor_absoluteY="452dp"
-            android:layout_height="64dp"
-            app:layout_editor_absoluteX="2dp"
+            android:id="@+id/button_a2"
             android:layout_width="64dp"
-            android:id="@+id/button_a4" />
+            android:layout_height="64dp"
+            android:layout_marginEnd="20dp"
+            android:text="A2"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+
+        <Constraint
+            android:id="@+id/button_a4"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="400dp"
+            android:text="A4"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+
+        <Constraint
+            android:id="@+id/imageView"
+            android:layout_width="414dp"
+            android:layout_height="731dp"
+            android:foregroundGravity="top"
+            android:rotation="0"
+            android:src="@mipmap/background"
+            android:translationZ="2dp"
+            android:visibility="gone"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+
+        <Constraint
+            android:id="@+id/cerrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cerrar"
+            android:visibility="gone"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
     </ConstraintSet>
 
-    <ConstraintSet android:id="@+id/end">
-        <Constraint android:id="@id/button" />
+    <ConstraintSet android:id="@+id/step_1">
+        <Constraint android:id="@+id/button_a3"
+            android:layout_height="64dp"
+            android:layout_width="64dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent">
+        <CustomAttribute
+            motion:attributeName="backgroundColor"
+            motion:customColorValue="#2ecc71"/>
+            <CustomAttribute
+                motion:attributeName="Text"
+                motion:customStringValue="A3"/>
+        </Constraint>
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/step_2">
+        <Constraint android:id="@+id/button_a3"
+            android:layout_height="64dp"
+            android:layout_width="150dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            >
+            <CustomAttribute
+                motion:attributeName="backgroundColor"
+                motion:customColorValue="#3498db"/>
+        <CustomAttribute
+            motion:attributeName="Text"
+            motion:customStringValue="Presionar Nuevamente"/>
+        </Constraint>
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/step_3">
+        <Constraint
+            android:id="@+id/imageView"
+            android:layout_width="414dp"
+            android:layout_height="731dp"
+            android:src="@mipmap/background"
+            android:visibility="visible"
+            android:translationZ="2dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            />
+        <Constraint
+            android:id="@+id/cerrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cerrar"
+            android:visibility="visible"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
     </ConstraintSet>
 
     <Transition
-        app:constraintSetEnd="@id/end"
-        app:constraintSetStart="@+id/start" />
+        motion:constraintSetStart="@+id/start_a3"
+        motion:constraintSetEnd="@+id/step_1"
+        motion:duration="1000">
+        <OnClick
+            motion:clickAction="toggle"
+            motion:targetId="@+id/button_a3"
+            />
+    </Transition>
+    <Transition
+        motion:constraintSetStart="@id/step_1"
+        motion:constraintSetEnd="@id/step_2"
+        motion:duration="1000"
+        >
+        <OnClick
+            motion:clickAction="toggle"
+            motion:targetId="@id/button_a3"
+            />
+    </Transition>
+    <Transition
+        motion:constraintSetStart="@id/step_2"
+        motion:constraintSetEnd="@id/step_3"
+        motion:duration="100"
+        >
+        <OnClick
+            motion:clickAction="toggle"
+            motion:targetId="@id/button_a3"
+            />
+    </Transition>
+    <Transition
+        motion:constraintSetStart="@id/step_3"
+        motion:constraintSetEnd="@+id/start_a3"
+        motion:duration="100"
+        >
+        <OnClick
+            motion:clickAction="toggle"
+            motion:targetId="@id/cerrar"
+            />
+    </Transition>
 </MotionScene>
