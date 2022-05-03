@@ -5,9 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:visibility="visible"
-    app:layoutDescription="@xml/actividad1_02_scene"
     app:showPaths="true"
-    tools:context=".fragments.FragmentActividad01">
+    app:layoutDescription="@xml/actividad1_02_scene"
+    tools:context=".fragments.FragmentActividad01"
+    android:id="@+id/actividad_02">
 
     <Button
         android:id="@+id/button_a1"
@@ -15,6 +16,7 @@
         android:layout_height="64dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="-200dp"
+        android:backgroundTint="#2ecc71"
         android:text="A1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,6 +38,7 @@
         android:layout_height="64dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="200dp"
+        android:backgroundTint="#2ecc71"
         android:text="A3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,6 +50,7 @@
         android:layout_height="64dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="400dp"
+        android:backgroundTint="#2ecc71"
         android:text="A4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -73,7 +77,8 @@
         android:text="Cerrar"
         android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
 
 
 </androidx.constraintlayout.motion.widget.MotionLayout>
